@@ -14,6 +14,7 @@ import Gallery from "./pages/Gallery"
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import { Alumni, Mentor, Main, Assistant } from './pages/team/index'
+import SideBar from './pages/SideBar';
 function Layout() {
   return (
     <div>
@@ -69,6 +70,7 @@ function App() {
 
   return (
     <div>
+
       <RouterProvider router={router}></RouterProvider>
     </div>
   )
