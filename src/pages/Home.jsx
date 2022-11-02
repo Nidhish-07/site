@@ -6,9 +6,9 @@ const Home = () => {
   return (
     <div>
       <div className={`hero min-h-screen ${styles.hero}`}>
-        <div className="hero-content flex-col lg:flex-row w-[100%] p-0">
-          <img src="https://placeimg.com/480/640/arch" className="max-w-sm  shadow-2xl" style={{ height: '800px', zIndex: "30" }} />
-          <div>
+        <div className="hero-content flex-col lg:flex-row w-[100%] p-0 gap-12">
+          <img src="https://placeimg.com/480/640/arch" className="max-w-sm  shadow-2xl" style={{ height: '600px', zIndex: "30" }} />
+          <div className="mr-12">
             <h1 className="text-5xl font-bold">Student's Association <br /> of Information Technology</h1>
             <p className={`py-6 bg-gray-800 text-white  absolute ${styles.slogan}`}>
               <div className="word1 inline">Beyond </div>
@@ -23,11 +23,12 @@ const Home = () => {
         </div>
       </div>
       <div >
+        {/* divider */}
         <div class="w-full p-0.5 my-12 mx-auto bg-[#2e2d2d] lg:w-1/3"></div>
 
 
-        <div class="z-30 relative items-center justify-center w-[80%]  overflow-auto m-auto">
-          <div class="inset-0 h-[80%] bg-cover bg-center"
+        <div class="z-30 relative items-center justify-center  h-full overflow-auto m-auto w-[80%]">
+          <div class="inset-0 h-screen bg-cover bg-center"
             style={{
               backgroundImage:
                 "url('https://wallpapercave.com/wp/wp6689710.jpg')"
