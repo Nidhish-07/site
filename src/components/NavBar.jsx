@@ -39,18 +39,18 @@ const NavBar = () => {
                 </div>
                 <div className="navbar-center hidden lg:flex ">
                     <ul className="menu menu-horizontal p-0 font-semibold text-xl flex items-center">
-                        <li className="hover:bg-[#2e2d2d] hover:text-white active:bg-[#2e2d2d]">
+                        <li className="hover:bg-[#2e2d2d] hover:text-white active:bg-[#2e2d2d] duration-700">
 
 
                             <Link to="/about" className="active:bg-[#2e2d2d]" >About</Link>
 
                         </li>
-                        <li className="hover:bg-[#2e2d2d] hover:text-white e" >
+                        <li className="hover:bg-[#2e2d2d] hover:text-white duration-700" >
                             <Link to="/gallery" className="active:bg-[#545353]">Gallery</Link>
                         </li>
                         <Members></Members>
-                        <li className="hover:bg-[#2e2d2d]  active:bg-[#2e2d2d] hover:rounded-none hover:text-white"><Link to="/clubservices" className="active:bg-[#545353]">Club Services</Link></li>
-                        <li className="hover:bg-[#2e2d2d] hover:text-white"><Link to="/contact" className="active:bg-[#545353]">Contact</Link></li>
+                        <li className="hover:bg-[#2e2d2d]  active:bg-[#2e2d2d] hover:rounded-none hover:text-white duration-700"><Link to="/clubservices" className="active:bg-[#545353]">Club Services</Link></li>
+                        <li className="hover:bg-[#2e2d2d] hover:text-white duration-700"><Link to="/contact" className="active:bg-[#545353]">Contact</Link></li>
                     </ul>
                 </div >
                 <div className="navbar-end gap-3 mr-12 mt-3">

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import styles from "./Home.css"
+import styles from "./Home.scss"
 import { FcAbout } from "react-icons/fc"
 import { GrLineChart } from 'react-icons/gr'
 import { RiTeamFill } from 'react-icons/ri'
@@ -12,7 +12,7 @@ const Home = () => {
     <div>
       <div className={`hero min-h-screen heroes`}>
         <div className="hero-content flex-col lg:flex-row w-[100%] p-0 gap-12">
-          <img src="https://placeimg.com/480/640/arch" className="max-w-sm  shadow-2xl" style={{ height: '600px', zIndex: "30" }} />
+          <img src="https://images.unsplash.com/photo-1466853817435-05b43fe45b39?dpr=1&auto=compress,format&fit=crop&w=1199&h=871&q=80&cs=tinysrgb&crop=" className="max-w-sm  shadow-2xl" style={{ height: '600px', zIndex: "30" }} />
           <div className="mr-12">
             <h1 className="text-5xl font-bold">Student's Association <br /> of Information Technology</h1>
             {/* <p className={`py-6 bg-gray-800 text-white  absolute slogan`}> */}
@@ -82,7 +82,15 @@ const Home = () => {
               </div>
             </div>
           </div>
-        <Link className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg mb-12 btn-info text-white" to="/clubservices">Click here for more </Link>  
+
+            <Link className="btn-draw  " to="/clubservices"><span>
+
+            Click here for more
+            </span>
+             </Link>
+
+          <div>
+          </div>
         </div>
 
 
@@ -107,28 +115,28 @@ const Home = () => {
           </div>
 
           <div>
-          <div className="text-center text-2xl font-semibold mb-2">The Vision</div>
-          To introduce new technologies and ideas with the help of club service and also improve communication skill and management skill of club members through seminars and workshops.
+            <div className="text-center text-2xl font-semibold mb-2">The Vision</div>
+            To introduce new technologies and ideas with the help of club service and also improve communication skill and management skill of club members through seminars and workshops.
           </div>
 
           <div className="pl-14">
             <RiTeamFill size={150}></RiTeamFill>
           </div>
           <div>
-          
-          <div className="text-center text-2xl font-semibold mb-2">The Club Service</div>
-          We conduct weekly club services every Monday throughout the academic year which improves soft skills of the students</div>
+
+            <div className="text-center text-2xl font-semibold mb-2">The Club Service</div>
+            We conduct weekly club services every Monday throughout the academic year which improves soft skills of the students</div>
           <div>
-          
-          <div className="text-center text-2xl font-semibold mb-2">The Start</div>
-          The overall functioning of this club is done by students of Information Technology Department</div>
+
+            <div className="text-center text-2xl font-semibold mb-2">The Start</div>
+            The overall functioning of this club is done by students of Information Technology Department</div>
           <div className="pl-14">
             <GrLineChart size={150}></GrLineChart>
           </div>
           <div>
-          
-          <div className="text-center text-2xl font-semibold mb-2">The Team</div>
-          The overall functioning of this club is done by students of Information Technology Department</div>
+
+            <div className="text-center text-2xl font-semibold mb-2">The Team</div>
+            The overall functioning of this club is done by students of Information Technology Department</div>
           <div className="">
             <HiPuzzle size={150}></HiPuzzle>
           </div>
